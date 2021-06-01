@@ -376,7 +376,7 @@ img {
   font-weight: 700;
   font-size: 5.7vw;
   min-height: 90vw;
-  background-image: url(../../img/reduslim-mobile@2x.png);
+  background-image: url(../img/reduslim-mobile@2x.png);
   background-repeat: no-repeat;
   background-size: 80% auto;
   background-position: 63% 85%; }
@@ -390,7 +390,7 @@ img {
       font-size: 18px;
       color: #ffffff;
       background-color: #428A60;
-      background-image: url(../../img/reduslim-desktop@2x.png);
+      background-image: url(../img/reduslim-desktop@2x.png);
       background-size: 179% auto;
       background-position: 18% calc(79% + 3.7vw *  2); } }
   @media (min-width: 1280px) {
@@ -471,7 +471,7 @@ img {
   .form__item--tel {
     width: 62%; }
   .form__item--country {
-    --country-flag-url: url(../../img/country-7.png);
+    --country-flag-url: url(../img/country-7.png);
     position: relative;
     min-width: 34%; }
   @media (min-width: 612px) {
@@ -582,7 +582,7 @@ img {
   .main-footer__list::after {
     content: "";
     position: absolute;
-    background-image: url(../../img/icon-lock.svg);
+    background-image: url(../img/icon-lock.svg);
     width: 12.14px;
     height: 15px;
     left: 49%; }
