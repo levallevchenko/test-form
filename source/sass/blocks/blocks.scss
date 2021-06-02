@@ -19,11 +19,11 @@
     margin: 0;
     padding: 43px 40px 37px;
     font-size: 18px;
-    color: #ffffff;
-    background-color: #428A60;
+    color: $white;
+    background-color: $green;
     background-image: url(../../img/reduslim-desktop@2x.png);
     background-size: 179% auto;
-    background-position: 18% calc(79% + 3.7vw *  2)
+    background-position: 18% calc(79% + 3.7vw * 2)
   }
 
   @media (min-width: $desktop-width) {
@@ -31,7 +31,8 @@
   }
 }
 
-.main-header__name, .main-header__type {
+.main-header__name,
+.main-header__type {
   font-size: inherit;
   margin: 0;
 }
@@ -43,7 +44,7 @@
 .main {
   grid-column: span 6;
   padding-bottom: 28px;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .form__header {
@@ -53,7 +54,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 29px 72px;
-    background-color: #F8F8F8;
+    background-color: $grey;
     border-top-right-radius: 30px;
   }
 }
@@ -63,6 +64,7 @@
   font-size: 9.5vw;
   line-height: 11.6vw;
   letter-spacing: 0.2px;
+
   @media (min-width: $tablet-width) {
     letter-spacing: 0.4px;
     font-size: 30px;
@@ -88,8 +90,8 @@
   margin-bottom: 12px;
 }
 
-
-.form__main, .form__footer {
+.form__main,
+.form__footer {
   @media (min-width: $tablet-width) {
     max-width: 900px;
     margin: 0 auto;
@@ -117,10 +119,14 @@
   &--name {
     flex-grow: 1;
     width: 100%;
-  };
+  }
+
+  ;
+
   &--tel {
     width: 62%;
   }
+
   &--country {
     --country-flag-url: url(../../img/country-7.png);
     position: relative;
@@ -165,8 +171,8 @@
   height: 8px;
   top: 20px;
   right: 9px;
-  border-left: 2px solid #212121;
-  border-bottom: 2px solid #212121;
+  border-left: 2px solid $black;
+  border-bottom: 2px solid $black;
   transform: rotate(-45deg);
 
   @media (min-width: $tablet-width) {
@@ -183,13 +189,14 @@
 }
 
 .form__label span {
-  color: #428A60;
+  color: $green;
 }
 
-.form__item input,  .form__item select {
+.form__item input,
+.form__item select {
   font-size: 14px;
   padding: 16px 10px;
-  border: 1px solid #E4E4E4;
+  border: 1px solid $middle-grey;
   border-radius: 5px;
 
   @media (min-width: $tablet-width) {
@@ -216,7 +223,7 @@
   width: 100%;
   padding: 13px;
   color: rgba(255, 255, 255, 1);
-  background-color: #428A60;
+  background-color: $green;
   border: 0;
   border-radius: 5px;
   margin-right: 10px;
@@ -228,7 +235,7 @@
 
 .main-footer {
   grid-column: 1 / -1;
-  background-color: #F8F8F8;
+  background-color: $grey;
   margin: 0 -6.5vw;
 
   @media (min-width: $tablet-width) {
@@ -237,11 +244,12 @@
 }
 
 .main-footer__list {
- @include reset-list;
- display: flex;
- justify-content: space-around;
- position: relative;
- padding: 11px 56px;
+  @include reset-list;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  padding: 11px 56px;
+
   &::after {
     content: "";
     position: absolute;
